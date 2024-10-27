@@ -1,0 +1,78 @@
+@media screen and (min-width: 600px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        header{
+            width: 90%;
+            height: 80px;
+            margin: 0 a;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: transparent;
+            z-index: 10;
+            position: absolute;
+            nav{
+                width: 50%;
+                ul{
+                    width: 100%;
+                    justify-content: center;
+                    display: flex;
+                    gap: 20px;
+                    list-style:none;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+            #Contacto{
+                button{
+                    padding: 15px;
+                    border: none;
+                    border-radius: 50px;
+                    background-color: #222;
+                    cursor: pointer;
+                    color: white;
+                    &:hover{
+                        color: #222;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+        main{
+            width: 100%;
+            margin: 0 auto;
+            .hero{
+                width: 100%;
+                height: 100vh;
+                padding: 0 90px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+                grid-template-areas: 
+                "HeroLeft HeroRigth"
+                ;
+                background-color: #d8eeecff;
+                .hero_titulo{
+                    width: 300px;
+                    grid-area: HeroLeft;
+                    align-self: center;
+                }
+                .hero_image{
+                    grid-area: HeroRigth;
+                    align-self: end;
+                    
+                   img{
+                    width: 65vw;
+                   }
+                }
+            }
+        }
+    }
+}
